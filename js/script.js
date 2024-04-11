@@ -1,0 +1,1 @@
+// Milestone 0: creare l'array di oggetti con le informazioni fornite
