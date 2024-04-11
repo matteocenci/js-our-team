@@ -36,3 +36,14 @@ const employees = [
 
 console.log(employees);
 console.log(employees[0]);
+
+// Milestone 1: stampare su console le informazioni di nome, ruolo e la stringa per ogni membro del team
+
+for (let i = 0; i < employees.length; i++) {
+    const curEmployee = employees[i];
+
+    for (let key in curEmployee) {
+        console.log(curEmployee[key]);
+
+    }
+}
