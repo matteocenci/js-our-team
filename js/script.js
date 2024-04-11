@@ -47,3 +47,22 @@ for (let i = 0; i < employees.length; i++) {
 
     }
 }
+
+// Milestone 2: stampare le stesse informazioni du DOM sottoforma di stringhe
+const employeesRow = document.getElementById("employees");
+for(let i = 0; i < employees.length; i++) {
+    const curEmployee = employees[i];
+    employeesRow.innerHTML += `
+    <div class = "col">
+      <div class = "card">
+        <div class = "card-body">
+         <h4 class = "card-title">${curEmployee.name}</h4>
+         <h6 class = "card-subtitle mb-2 text-body-secondary">
+            Role: ${curEmployee.role}
+         </h6>
+        </div>
+      </div>
+    </div>
+    
+    `;
+}
